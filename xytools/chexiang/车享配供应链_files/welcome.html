@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://cxpscm.pre.chexiang.com/welcome.htm -->
+<html lang="en" class="no-js"><!--<![endif]--><!-- BEGIN HEAD --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>车享配供应链</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <meta content="" name="description">
+   <meta content="" name="author">
+   <meta name="MobileOptimized" content="320">
+   <!-- BEGIN GLOBAL MANDATORY STYLES -->          
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css"><link rel="stylesheet" type="text/css" href="./select2_metro.css"><link rel="stylesheet" type="text/css" href="./uniform.default.css"><link rel="stylesheet" type="text/css" href="./datepicker.css"><link rel="stylesheet" type="text/css" href="./daterangepicker-bs3.css"><link rel="stylesheet" type="text/css" href="./zTreeStyle.css"><link rel="stylesheet" type="text/css" href="./DT_bootstrap.css"><link rel="stylesheet" type="text/css" href="./jquery.autocomplete.css"><link rel="stylesheet" type="text/css" href="./style-metronic.css"><link rel="stylesheet" type="text/css" href="./plugins.css"><link rel="stylesheet" type="text/css" href="./custom.css"><link rel="stylesheet" type="text/css" href="./divcommon.css">
+   <!--<link rel="shortcut icon" href="favicon.ico" />-->
+   <style>
+    html, body{ height: 100%; }
+</style>
+   <script type="text/javascript">
+   var  cxjBasePath = "http://cxpscm.pre.chexiang.com:80/";
+   </script>
+   <link href="./font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="./jquery.dataTable.cn.js"></script><script type="text/javascript" src="./jquery-1.10.2.min.js"></script><script type="text/javascript" src="./jquery-migrate-1.2.1.min.js"></script>
+
+<style>
+/*首页展示条新增样式begin*/
+.cuscenter-box{
+	width:100%;
+	margin:0 auto;
+	padding:10px 40px;}
+.cuscenter-tit{
+	font-size:16px;
+	color:#282828;
+	}
+.cuscenter-box p{
+	color:#555;
+	font-size:12px;}
+.cuscenter-box p span.orange{
+	color:orange;
+}
+/*首页展示条新增样式end*/
+</style></head> 		
+
+<body><div class="padding-0">
+	<ul class="page-breadcrumb breadcrumb">
+      	<li>
+	       <i class="fa fa-home"></i>
+	       <span href="#">首页</span> 
+	       <i class="fa fa-angle-right"></i>
+	       <span href="#">欢迎页面</span>
+      	</li>
+   </ul>
+</div>
+<h2 class="page-title">欢迎进入车享配供应链管理系统 </h2>
+
+<div class="cuscenter-box">
+<!--
+	<h3 class="cuscenter-tit">今日提示</h3>
+	<p>1.您的销售订单数:<span class="orange">3</span></p>
+	<p>1.您的销售订单数:<span>3</span></p>
+	<p>1.您的销售订单数:<span>3</span></p>
+	<p>1.您的销售订单数:<span>3</span></p>
+	<p>1.您的销售订单数:<span>3</span></p>
+-->
+</div>
+ 	<!-- END CONTENT -->
+   	<!-- BEGIN FOOTER -->
+<!--<div class="footer text-center">
+      <div class="footer-inner">
+          CopyRight © 2016-2020, All Rights Reserved 版权所有 车享
+      </div>
+</div>-->
+
+   <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+   <!-- BEGIN CORE PLUGINS -->   
+   
+    <script type="text/javascript" src="./bootstrap.min.js"></script><script type="text/javascript" src="./jquery.cookie.min.js"></script><script type="text/javascript" src="./select2.min.js"></script><script type="text/javascript" src="./jquery.uniform.min.js"></script><script type="text/javascript" src="./app(1).js"></script><script type="text/javascript" src="./jquery.validate.min.js"></script><script type="text/javascript" src="./messages_zh.js"></script><script type="text/javascript" src="./twitter-bootstrap-hover-dropdown.min.js"></script><script type="text/javascript" src="./jquery.slimscroll.min.js"></script><script type="text/javascript" src="./jquery.dataTables.js"></script><script type="text/javascript" src="./jquery.ztree.core-3.5.min.js"></script><script type="text/javascript" src="./jquery.ztree.excheck-3.5.min.js"></script><script type="text/javascript" src="./jquery.ztree.exedit-3.5.min.js"></script><script type="text/javascript" src="./jquery.ztree.exhide-3.5.min.js"></script><script type="text/javascript" src="./DT_bootstrap.js"></script><script type="text/javascript" src="./bootstrap-datepicker.js"></script><script type="text/javascript" src="./bootstrap-datepicker.zh-CN.js"></script><script type="text/javascript" src="./jquery.autocomplete.js"></script><script type="text/javascript" src="./jquery.blockui.min.js"></script><script type="text/javascript" src="./date.js"></script><script type="text/javascript" src="./cxpmap.js"></script><script type="text/javascript" src="./tools.js"></script>
+    <script>
+      //Added by guyifeng
+      var alertErrorMessage='';
+      var alertMessage='';
+      var ajaxStatusSuccess="success";
+      jQuery(document).ready(function() {
+      
+          //App.init(); // initlayout andore plugins
+        //unifined alert error message and not disappear
+        if(alertErrorMessage){
+             $.Alert(alertErrorMessage); 
+        }
+        //unifined alert message and will disappear automatically
+        if(alertMessage){
+             tools.message(alertMessage); 
+        }
+        var parentFrameLoginUser = $('#currentUser', window.parent.document).val();
+        if(parentFrameLoginUser != null && parentFrameLoginUser != undefined && parentFrameLoginUser != ''){
+        	//alert(parentFrameLoginUser);
+        	
+        	//var url = cxjBasePath + '/getCurrentUser.json';			
+			//$.ajax({
+				//url : url,
+				//type : "post",
+				//async : false,
+				//dataType : "text",
+				//success : function (data){
+				//	if(data != null && data != parentFrameLoginUser){
+				//		$.Alert('页面已失效');
+				//		location.href=cxjBasePath+'/index.htm';
+				//	}
+			//	}
+			//});
+			var currentSessionUser = "admin01";
+			if(currentSessionUser){
+				if(currentSessionUser !=undefined && currentSessionUser!= null && currentSessionUser!= parentFrameLoginUser){
+					$.Alert('页面已失效');
+					location.href=cxjBasePath+'/index.htm';
+				}
+			}
+        
+        }else{
+        	
+        	if($("#isLoginPage").val()!=1){
+				$.Alert('无iframe打开');     
+				location.href=cxjBasePath+'/index.htm';
+			}
+			   
+        }
+        //alert($('#currentUser', window.parent.document).val());
+
+      });
+      
+     
+     
+    </script>
+ 	
+	
+
+</body></html>

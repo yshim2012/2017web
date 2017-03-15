@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="myApp">
+<div ng-controller="filterController">
+    {{text}}
+</div>
+<div ng-controller="filterController1">
+    {{text}}
+</div>
+
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript">
+    angular.module("myApp",[]);
+    angular.module("myApp").controller("filterController",["$scope",function($scope) {
+              $scope.text = "hello";
+            }]);
+    angular.module("myApp").controller("filterController1",["$scope",function($scope){
+               $scope.text = "world";
+    }]);
+</script>
+</body>
+</html>

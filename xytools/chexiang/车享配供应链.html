@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://cxpscm.pre.chexiang.com/processLogin.htm -->
+<html lang="en" class="no-js"><!--<![endif]--><!-- BEGIN HEAD --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>车享配供应链</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <meta content="" name="description">
+   <meta content="" name="author">
+   <meta name="MobileOptimized" content="320">
+   <!-- BEGIN GLOBAL MANDATORY STYLES -->          
+<link rel="stylesheet" type="text/css" href="./车享配供应链_files/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/select2_metro.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/uniform.default.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/daterangepicker-bs3.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/zTreeStyle.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/DT_bootstrap.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/jquery.autocomplete.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/style-metronic.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/default.css"><link rel="stylesheet" type="text/css" href="./车享配供应链_files/index.css">
+    
+   
+  
+   
+   <style>
+    html, body{ height: 100%; background: #f0f }
+</style>
+   <script type="text/javascript">
+   var  cxjBasePath = "http://cxpscm.pre.chexiang.com:80/";
+   </script>
+<link href="./车享配供应链_files/font-awesome.min.css" rel="stylesheet">
+   
+<script type="text/javascript" src="./车享配供应链_files/jquery-1.10.2.min.js"></script>
+     <link rel="shortcut icon" href="http://img.pre.chexiang.com/cxpweb/assets/img/kylogo.ico">
+</head>
+
+<body class="page-header-fixed index">
+
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+      <div class="header-inner">
+         
+         <!-- 
+         <div class="navbar-brand navbar-logo">
+          <img src="http://img.pre.chexiang.com/cxpweb/assets/img/logo3.png" alt="上汽零部件采购中心管理系统" width="200" height="60" />
+         </div>
+         -->
+         <div class="navbar-brand navbar-slogan">POST - 车享配供应链管理系统</div>
+
+         <!-- <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <img src="assets/img/menu-toggler.png" alt="" />
+         </a> -->
+         <!-- END RESPONSIVE MENU TOGGLER -->
+         <!-- BEGIN TOP NAVIGATION MENU -->
+         <ul class="nav navbar-nav navbar-info pull-right">
+            <!-- BEGIN TODO DROPDOWN -->
+            <li class="welcome">[administrator01]，欢迎您</li>
+             <input type="hidden" id="currentUser" value="admin01">
+            <!-- END TODO DROPDOWN -->
+            <!-- BEGIN USER LOGIN DROPDOWN -->
+            <li class="dropdown user">
+               <a href="http://cxpscm.pre.chexiang.com/processLogin.htm#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                 <img alt="" src="./车享配供应链_files/pel.png">
+                 <span class="username">控制面板</span>
+                 <i class="fa fa-angle-down"></i>
+               </a>
+               <ul class="dropdown-menu">
+                  <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/toChangePassword.htm"><i class="fa fa-bar-chart-o"></i> 修改密码</a></li>
+                  <li><a href="http://cxpscm.pre.chexiang.com/logout.htm"><i class="fa fa-key"></i> 退出系统</a>
+                  </li>
+               </ul>
+            </li>
+            <!-- END USER LOGIN DROPDOWN -->
+         </ul>
+         <!-- END TOP NAVIGATION MENU -->
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <!-- BEGIN CONTAINER -->
+   <div class="page-container">
+      <!-- BEGIN SIDEBAR -->
+      <div class="page-sidebar-wrapper">
+          <div class="page-sidebar navbar-collapse collapse">
+              <!--左侧菜单-->
+              <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100px;"><div class="scroller" style="overflow: hidden; width: auto; height: 100px;">
+                        <ul class="page-sidebar-menu" id="sideMenu">
+                         <li>
+                           <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                           <div class="sidebar-toggler hidden-phone"></div>
+                           <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-gears"></i>
+                                    <span class="title">系统管理</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysmgmt/bizlog/menuBizlogList.htm">业务日志</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysmgmt/employee/toEmployeeList.htm">员工管理</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysCodeType/search.htm">数据字典</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/role/queryForList.htm">角色管理</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysmgmt/homesno/toComparePage.htm">车享家单号对比</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysmgmt/excelDownload/toDownloadExcelList.htm">大数据导出下载</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">基础数据管理</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehousemgt/warehouse/toWarehouseList.htm">仓库维护</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/distribution/center/toDistributionCenterPage.htm">配送中心</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseVendor/toQueryPurchaseVendor.htm">供应商维护</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/masterdata/material/materialList.htm">物料管理</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/masterdata/materialrelation/queryMaterialRelationList.htm?requestPage=main">包装件维护</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/masterdata/materialmapping/toQueryMaterialMapping.htm">翻新件维护</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysmgmt/purchaseArea/toQueryPurchaseAreaList.htm">采购区域</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesCenter/querySalesAreaForList.htm">销售区域</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/masterdata/customer/menuCustomerList.htm">客户及门店维护</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-filter"></i>
+                                    <span class="title">采购管理</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseagreement/toPurchaseAgreementList.htm">采购合同</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/contractadjust/toQueryContractAdjustPage.htm">采购合同清单调整</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseplan/toPurchasePlanList.htm">采购计划</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseplantopurchaseorder/toPurchasePlanToPurchaseOrder.htm">采购计划转订单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseorder/toPurchaseOrderList.htm">采购订单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchasereturn/toPurchaseReturnList.htm">采购退货</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseclaims/toPurchaseClaimsList.htm">采购索赔</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchasepromotion/queryPurchasePromotionList.htm?requestPage=main">采购促销</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaserebate/queryPurchaseRebateList.htm?requestPage=main">采购返利</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchasestatement/toPurchaseStatementList.htm">采购对账</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/claims/salesclaimstopurchaseclaims/toSalesClaimsToPurchaseClaimsVoList.htm">销售索赔转采购索赔</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchaseinvoice/queryPurchaseInvoiceList.htm?requestPage=main">采购发票</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/purchasestatementadjust/toPurchasestatementAdjustList.htm">采购对账调整单</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">销售管理</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesprice/toSkuPriceList.htm">销售价格查询</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesaccount/toSalesAccountList.htm">客户账户信息</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesorder/toSalesOrderList.htm">销售订单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesreturn/toSalesReturnList.htm">销售退货单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/preSalesOrder/toPreSoList.htm">预订单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com//salesmgmt/salesaccount/toSalesAccountDetailList.htm">索赔账户流水查询</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesclaims/toSalesClaimsList.htm">销售索赔单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salespromotion/querySalesPromotionList.htm?requestPage=main">销售促销</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesrebate/querySalesRebateList.htm?requestPage=main">销售返利</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salescredit/querySalesCreditList.htm?requestPage=main">销售信用</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesstatement/toSalesStatementList.htm">销售对账</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesinvoice/querySalesInvoiceList.htm?requestPage=main">销售发票</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/salesstatementadjust/toSalesstatementAdjustList.htm">销售对账调整单</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-money"></i>
+                                    <span class="title">财务管理</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/finnacemgmt/vouchertemplate/toQueryCredenceTempletPage.htm">业务凭证模板</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/finnacemgmt/salesreceipt//toQueryReceiptPage.htm">收款单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/financemgmt/collectionverify/toCollectionVerifyPage.htm">应收核销</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/financemgmt/accountspayment/toAccountsPaymentList.htm">付款单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/financemgmt/paymentapply/toPaymentApplyPage.htm">应付核销</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/financemgmt/costAdjustment/toQueryCostAdjustmentPage.htm">成本调整查询</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">仓储管理</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/warehousereceivingnote/toWarehouseReceivingNoteList.htm">收货通知单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/purchasemgmt/warehouseentry/toWarehouseEntryList.htm">入库单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/salesmgmt/deliverynote/toDeliveryNoteList.htm">发货通知单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/sysmgmt/salesstockout/toStockOutPage.htm">出库单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehouse/transfermgmt/toQueryTransferPage.htm">调拨单管理</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehousemgt/warehouse/warehousePackingMaterial.htm">包装工单管理</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehouse/inventoryloss/toQueryWarehouseInventoryLoss.htm">盘点单查询</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehousemgmt/salesClaimsStock/toQuerySalesClaimsStock.htm">销售索赔旧件库存管理</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehousemgt/otherEntryApply/toOtherEntryApply.htm?requestPage=main">其他入库申请单</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/warehousemgmt/otherDeliveryOut/toOtherDeliveryOutList.htm?requestPage=main">其他出库申请单</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">采购报表</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toquerypurchaseOrderDeliveryStatisticsPage.htm">采购订单交货率统计报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryPurchaseOrderTracePage.htm">采购订单在途跟踪表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/queryInventoryTurnoverRatePage.htm">库存周转率报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryProviderAbcAnalysisPage.htm">供应商abc分析报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/purchaseDetailReport.htm">采购入库明细报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySkuAbcAnalysisPage.htm">产品abc分析报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryPurchasePlanPage.htm">快速订货报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/purchasePriceTendency.htm">采购价格趋势报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySkuPmPage.htm">产品PM表1</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySkuPmTwoPage.htm">产品PM表2</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/salesOrderSatisfy.htm">订单满足率报表</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">销售报表</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/shortageregistration/toQueryPage.htm">缺货登记报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/customerDelivery.htm">经销商维度分析报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySalesMakeInvoiceDetailPage.htm">销售开票明细报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySalesOrderDetailPage.htm">销售订单明细报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySalesOrderStatisticsPage.htm">销售订单统计报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySalesOrderTrackPage.htm">销售订单跟踪报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryDifferentEntryReport.htm">车享家差异入库报表</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">库存报表</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryRtInventoryPage.htm">即时库存报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryMaterialInvoicingPage.htm">物料进销存统计</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryMaterialInvoicingDetailPage.htm">物料进销存明细表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryRtInventoryAndCustomerPage.htm">即时库存报表(供应商)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">财务报表</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerygrossProfitDetailReport.htm">进销毛利明细报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerygrossProfitReport.htm">进销毛利汇总表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toAPAgingPeriodReportPage.htm">应付账期报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toARAgingPeriodReportPage.htm">应收账期报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerygrossProfitCustomerReport.htm">客户进销毛利汇总报表</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">索赔报表</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryPurchaseClaimsPage.htm">采购索赔统计表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQuerySalesClaimsPage.htm">销售索赔统计表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryMaterialClaimsPage.htm">物料索赔率及故障率报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryMaterialTypeClaimsPage.htm">物料类型索赔率及故障率报表</a></li>
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/toQueryClaimsAgainOutSummarizePage.htm">再索赔出库汇总报表</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">
+                                        <i class="fa fa-bookmark"></i>
+                                    <span class="title">系统运维报表</span><span class="arrow "></span></a>
+                                        <ul class="sub-menu">
+                                                    <li><a target="iframepage" href="http://cxpscm.pre.chexiang.com/reportmgmt/report/reportStatistics.htm">报表使用情况</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+              </div><div class="slimScrollBar" style="width: 7px; position: absolute; top: -1px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 667.002px; background: rgb(161, 178, 189);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+          </div>
+      </div>
+      <!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->
+      <div class="page-content-wrapper">
+          <div class="page-content" id="page-content">
+              <!-- <div class="maintab-wrap">
+                  <ul class="topTabUL" id="topTabUL">
+                      <li title="首页" class="currentClass">
+                          <a class="text" href="welcome.html">欢迎页面</a>
+                      </li>
+                  </ul>
+              </div> -->
+              <div id="iframeWrap" class="iframe-wrap">
+                  <iframe name="iframepage" class="iframe-page" src="./车享配供应链_files/welcome.html" frameborder="0" width="100%"></iframe>
+              </div>
+          </div>
+      </div>
+   </div>
+   <div class="footer text-center">
+      <div class="footer-inner">
+          CopyRight © 2016-2020, All Rights Reserved 版权所有 车享
+      </div>
+   </div>
+<script type="text/javascript" src="./车享配供应链_files/index.js"></script>
+  
+   
+<script type="text/javascript" src="./车享配供应链_files/bootstrap.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.cookie.min.js"></script><script type="text/javascript" src="./车享配供应链_files/select2.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.uniform.min.js"></script><script type="text/javascript" src="./车享配供应链_files/app.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.validate.min.js"></script><script type="text/javascript" src="./车享配供应链_files/messages_zh.js"></script><script type="text/javascript" src="./车享配供应链_files/twitter-bootstrap-hover-dropdown.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.slimscroll.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.dataTables.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.ztree.core-3.5.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.ztree.excheck-3.5.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.ztree.exedit-3.5.min.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.ztree.exhide-3.5.min.js"></script><script type="text/javascript" src="./车享配供应链_files/DT_bootstrap.js"></script><script type="text/javascript" src="./车享配供应链_files/bootstrap-datepicker.js"></script><script type="text/javascript" src="./车享配供应链_files/bootstrap-datepicker.zh-CN.js"></script><script type="text/javascript" src="./车享配供应链_files/jquery.blockui.min.js"></script><script type="text/javascript" src="./车享配供应链_files/tools.js"></script>
+    <script>
+      var alertMessage="";
+      var ajaxStatusSuccess="success";
+      jQuery(document).ready(function() {
+
+        if(alertMessage){
+             tools.message(alertMessage); 
+        }
+
+      });
+    </script>
+
+</body></html>

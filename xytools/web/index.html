@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html ng-app="xybus">
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="css/button.css" />
+<link rel="stylesheet" href="css/input.css" />
+<link rel="stylesheet" href="css/div.css" />
+<script src="angular.js"></script>
+<style>
+
+ body{
+     background-color: #9ea
+ } 
+</style>
+<script>
+var app=angular.module('xybus', []);
+app.controller('cont1', function ($scope, $http){	
+    
+    $scope.changepayway=function(){
+     $http.get('http://192.168.1.19:8080/xybustools/ChangePayWay', {
+     params: {job_number: $scope.charge_job_number,pay_way:$scope.pay_way}
+    }).success(function (res){
+       $scope.a=res;
+    }).error(function (){
+      alert('失败了');
+    });
+    };
+    $scope.exchangingcard=function(){
+    $http.get( 'http://192.168.1.19:8080/xybustools/ExchangingCard', {
+     params: {old_jobnumber: $scope.old_jobnumber,new_jobnumber:$scope.new_jobnumber}
+    }).success(function (res){
+       $scope.a=res;
+    }).error(function (){
+      alert('失败了');
+    });
+    };
+    $scope.judgeride=function(){
+    $http.get('http://192.168.1.19:8080/xybustools/JudgeRide', {
+     params: {job_number: $scope.job_number,card_pin: $scope.card_pin}
+    }).success(function (res){
+       $scope.a=res;
+    }).error(function (){
+      alert('失败了');
+    });
+      };
+    $scope.querypassenger=function(){
+    $http.get('http://192.168.1.19:8080/xybustools/QueryPassenger', {
+     params: {job_number: $scope.query_job_number,mobile: $scope.query_mobile}
+    }).success(function (res){
+     
+       $scope.a=res;
+    }).error(function (){
+      alert('失败了');
+    });
+   
+      };
+});
+</script>
+<h1>Welcome to my tools</h1>
+</head>
+<body ng-controller="cont1" >
+<div>
+<div class="pages">
+    <div class="spandiv"><span class="fontspan">乘客工号</span></div>
+    <div class="inputdiv">
+    <input  NAME="job_number" TYPE="text" class="form-control"  ng-model="job_number">  
+    </div>
+    <div class="spandiv"><span class="fontspan">物理卡号</span></div>
+    <div class="inputdiv">
+    <input  NAME="card_pin" TYPE="text" class="form-control"  ng-model="card_pin">  
+    </div>
+    <div class="btnspandiv"></div>
+    <div class="inputdiv">
+    <button type="button" class="button" ng-click="judgeride()">判断乘车</button>
+     </div >
+</div >
+<div > 
+  
+</div>
+    </div>
+        <div>
+<div>
+<div class="pages">
+    <div class="spandiv"><span class="fontspan">旧特种卡</span></div>
+    <div class="inputdiv">
+    <input  NAME="old_jobnumber" TYPE="text" class="form-control"  ng-model="old_jobnumber">  
+    </div>
+    <div class="spandiv"><span class="fontspan">新特种卡</span></div>
+    <div class="inputdiv">
+    <input  NAME="new_jobnumber" TYPE="text" class="form-control"  ng-model="new_jobnumber">  
+    </div>
+    <div class="btnspandiv"></div>
+        <div class="inputdiv">
+      <button type="button" class="button" ng-click="exchangingcard()">更换特种卡</button>
+     </div >
+</div>
+    </div>
+        <div>
+<div class="pages">
+
+    <div class="spandiv"><span class="fontspan">充值工号</span></div>
+    <div class="inputdiv">
+    <input  NAME="charge_job_number" TYPE="text" class="form-control" ng-model="charge_job_number">  
+    </div>
+    <div class="spandiv"><span class="fontspan">支付方式</span></div>
+    <div class="inputdiv">
+     <input  NAME="pay_way" TYPE="text" class="form-control" ng-model="pay_way">
+    </div>
+    <div class="btnspandiv"></div>
+        <div class="inputdiv">
+    <button type="button" class="button" ng-click="changepayway()">更换充值类型</button>
+     </div >
+</div>
+    </div>
+        <div>
+<div class="pages">
+    <div class="spandiv"><span class="fontspan">乘客工号</span></div>
+    <div class="inputdiv">
+    <input  NAME="query_job_number" TYPE="text" class="form-control" ng-model="query_job_number">  
+    </div>
+      <div class="spandiv"><span class="fontspan">手机号</span></div>
+    <div class="inputdiv">
+    <input  NAME="query_mobile" TYPE="text" class="form-control" ng-model="query_mobile">  
+    </div>
+      <div class="btnspandiv"></div>
+    <div class="inputdiv">
+    <button type="button" class="button" ng-click="querypassenger()">查询乘客信息</button>
+    </div>
+    <div class="contextdiv"><span class="sidebar" ng-model="content">{{a}}</span></div>
+</div>
+    </div>
+</body>
+</html>
